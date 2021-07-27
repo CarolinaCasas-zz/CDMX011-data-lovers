@@ -5,3 +5,15 @@
 #nombrePokemon{
    background-color:A9C77A; 
 }*/
+
+body{
+    background-color: rosybrown;
+   
+}
+
+img{
+    background-color: seashell;
+    border-radius: 5%;
+    width: 15%;
+    display: block;
+}
