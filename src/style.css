@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body{
@@ -101,22 +102,10 @@ img{
     margin-top: 1%;
     flex-wrap: wrap;
 
+body{
+    background-color: #DBFDB9;
 }
 #imagen{
     background-color: transparent;
 }
 
-
-
-/*
-#info{
-display: flex;
-text-align: justify;
-background-color: rgb(189, 85, 85);
-width: 200px;
-height: 300px;
-margin-right: 50%;
-margin-left: 50%;
-flex-wrap: wrap;
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}*/
