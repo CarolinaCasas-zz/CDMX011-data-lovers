@@ -30,4 +30,3 @@ document.getElementById("menuDesplegable").addEventListener("change", function (
 
 document.getElementById("botonNuevaBusqueda").addEventListener("click", function () { location.reload() });
 
-

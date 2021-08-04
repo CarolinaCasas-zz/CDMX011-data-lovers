@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=VT323&display=swap');
 
@@ -197,7 +198,6 @@ footer{
     margin-top: 50px;
     background-color: transparent;
     margin-left: 30%;
-
 }
 #fondoImagen{
     width: 290px;
@@ -263,6 +263,7 @@ footer{
     font-family: 'IBM Plex Mono', monospace; 
     font-weight: bolder;   
 
+
 }
 .info{
     position: fixed;    
@@ -276,9 +277,9 @@ footer{
     word-wrap: break-word;
     text-transform: capitalize;   
     font-weight: bold;
- 
-}
 
+}
+   
 span{
     font-size: 13px;
 }
@@ -322,3 +323,215 @@ span{
         flex-direction: column;
     }
   }
+=======
+.inicio{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.claseTarjeta{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.desplegable{
+display: flex;
+flex-wrap: wrap; 
+flex-direction: row;
+text-align: center;
+cursor: pointer;
+justify-content: center;
+
+}
+/*.buscador{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}*/
+
+#prueba{
+    background-color: tomato;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+    background: #89C893;
+    height: 30px;
+    margin-top: 0;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.contenido-modal{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    background: #49896F;
+    margin: auto;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.438);
+    animation-name: modal;
+    animation-duration: 1s;
+}
+.close{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+.close:hover{
+    color: rgb(160, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+#informacion{
+    text-align: justify;
+}
+.modal-body{
+    padding: 20px 16px;
+}
+
+
+/*MODAL BUSCADOR*/
+.flexBuscador{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalBuscador{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.contenido-modal-buscador{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    background: #cf1111;
+    margin: auto;
+    width: 200px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.438);
+    animation-name: modal;
+    animation-duration: 1s;
+}
+.imagenPoke{
+    display: flex;
+    width: 150px;
+    margin-left: 25px;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.info{
+    text-align: center;
+}
+
+.closePoke{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+.closePoke:hover{
+    color: rgb(160, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalBuscador-body{
+    padding: 20px 16px;
+}
+
+
+
+
+
+
+
+@keyframes modal{
+    from{top: -330px; opacity: 0;}
+    to{top:0; opacity: 1;}
+
+}
+
+@media screen and (max-width: 500px) {
+    .logo{
+        float: none;
+    }
+
+    .search {
+      float: none;
+    }
+    .modal{
+        float: none;
+    }
+    .inicio{
+        flex-direction: column;
+    }
+    .claseTarjeta{
+        flex-direction: column;
+    }
+    .desplegable{
+    flex-direction: column;
+    }
+    .buscador{
+        flex-direction: column;
+    }
+  
+  }
+
+footer{
+    display:flex;
+    flex-direction: column ;
+    align-items: center;
+}
+  #footerImg{
+    width: 20%;
+  }
+
+  #masInformacion{
+    font-size: 25px;
+}
