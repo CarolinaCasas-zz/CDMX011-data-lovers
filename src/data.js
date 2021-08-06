@@ -1,3 +1,4 @@
+
 function pokePantallaInicial(dataImportada) {
 
   dataImportada.forEach(item => {
@@ -40,12 +41,14 @@ function pokePantallaInicial(dataImportada) {
         debilidadP.textContent = item.weaknesses;
       });
 
+
       document.getElementById("closePoke").addEventListener("click", function () {
         document.getElementById("modalPoke").style.display = "none";
       });
     }
   });
 }
+
 
 const datitos = {
   pokeError: function (dataImportada, searchUser) {
@@ -61,6 +64,7 @@ const datitos = {
 
   pokeFiltroNameNum: function (dataImportada, searchUser) {
     const buscadorFuncional = dataImportada.filter(poke => poke.name == searchUser);
+
 
     let resultadoNomNum = "";
     buscadorFuncional.forEach(item => {
@@ -153,3 +157,4 @@ function recuperarSeleccionado(dataImportada) {
 
 
 export { pokePantallaInicial, datitos, recuperarSeleccionado }
+

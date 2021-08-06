@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
 
+
 }
 body{
     background-color: #DBFDB9;
@@ -107,6 +108,162 @@ body{
 .inicio{
     margin: 50px;
     margin-top: 0px;
+=======
+.modalBuscador{
+    display: none;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.contenido-modal-buscador{
+    position: relative;
+    background: #cf1111;
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid;
+    animation-name: modal;
+    animation-duration: 1s;
+}
+.imagenPoke{
+    z-index: 1;
+    position: absolute;
+    margin-top: 50px;
+    background-color: transparent;
+    margin-left: 30%;
+}
+#fondoImagen{
+    width: 290px;
+    height: 200px;
+    position: fixed;
+    margin-top: 10px;
+    margin: 3px;    
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#pokeball{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    margin-top: -40px;
+    margin-left: 250px;
+}
+#circle{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-top: 7px;
+    background-color: rgb(0, 255, 200);
+    border: 5px double;
+    border-radius: 50%;
+}
+#cruz{
+    position: fixed;
+    z-index: 1;
+    margin-top: 290px;
+    margin-left: -10px;    
+    width: 80px;
+    height: 50px;
+    
+}
+.contorno{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    width: 290px;
+    height: 225px;
+    margin: 3px;
+    margin-top: 215px;
+    border: 2px solid;
+    border-radius: 10px;
+    position: fixed;
+}
+#name{
+    position: fixed;
+    background-color: rgb(105, 172, 70);
+    width: 200px;
+    height: 20px;
+    margin-top: 218px;
+    margin-left: 80px;
+    border-radius: 30px;
+    border: 2px solid;
+}
+#namePoke{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace; 
+    font-weight: bolder;   
+
+
+}
+.info{
+    position: fixed;    
+    font-family: 'IBM Plex Mono', monospace;    
+    width: 230px;
+    text-align: center;
+    margin: 55px;
+    margin-top: 245px;
+    background-color: rgb(105, 172, 70);
+    border: 5px double;
+    word-wrap: break-word;
+    text-transform: capitalize;   
+    font-weight: bold;
+
+}
+   
+span{
+    font-size: 13px;
+}
+
+.closeBuscador{
+    color: rgb(0, 0, 0);
+    margin: 9px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.closeBuscador:hover{
+    color: rgb(255, 14, 14);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalBuscador-body{
+    padding: 20px 16px;
+}
+
+
+
+@keyframes modal{
+    from{top: -330px; opacity: 0;}
+    to{top:0; opacity: 1;}
+
+}
+
+@media screen and (max-width: 500px) {
+  
+    .inicio{
+        flex-direction: column;
+    }
+    .desplegable{
+    flex-direction: column;
+    }
+    .navegacion{
+        flex-direction: column;
+    }
+    .containerSearch{
+        flex-direction: column;
+    }
+  }
+
     display: flex;
     align-items: center;
     flex-wrap: wrap; 
@@ -132,6 +289,7 @@ body{
 .claseTarjeta:hover{
     background-color: #f7a151;
     transform: scale(1.2);
+
 }
 
 .desplegable{
@@ -148,7 +306,126 @@ text-align: center;
 
 img{
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.7));
+
+flex-wrap: wrap; 
+flex-direction: row;
+text-align: center;
+cursor: pointer;
+justify-content: center;
+
 }
+/*.buscador{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}*/
+
+#prueba{
+    background-color: tomato;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+    background: #89C893;
+    height: 30px;
+    margin-top: 0;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.contenido-modal{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    background: #49896F;
+    margin: auto;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.438);
+    animation-name: modal;
+    animation-duration: 1s;
+}
+.close{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+.close:hover{
+    color: rgb(160, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+#informacion{
+    text-align: justify;
+}
+.modal-body{
+    padding: 20px 16px;
+}
+
+
+/*MODAL BUSCADOR*/
+.flexBuscador{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalBuscador{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.contenido-modal-buscador{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    background: #cf1111;
+    margin: auto;
+    width: 200px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.438);
+    animation-name: modal;
+    animation-duration: 1s;
+
+}
+.imagenPoke{
+    display: flex;
+    width: 150px;
+    margin-left: 25px;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
 
 .footer{
     display:flex;
@@ -209,7 +486,6 @@ img{
     margin-top: 50px;
     background-color: transparent;
     margin-left: 30%;
-
 }
 #fondoImagen{
     width: 290px;
@@ -344,4 +620,3 @@ span{
         flex-direction: column;
 
     }
-  }

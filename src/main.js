@@ -1,4 +1,6 @@
+
 import { pokePantallaInicial, datitos, recuperarSeleccionado } from './data.js';
+
 import data from './data/pokemon/pokemon.js';
 
 const dataImportada = data.pokemon;
@@ -43,7 +45,9 @@ clickBuscar.addEventListener("click", function () {
     modalP.style.display = "none";
   }
 
+
 });
+
 
 
 //RESULTADO MENU DESPLEGABLE
@@ -54,7 +58,6 @@ document.getElementById("menuDesplegable").addEventListener("change", function (
   document.getElementById("menuDesplegable").style.display = "none";
   document.getElementById("botonNuevaBusqueda").style.display = "block";
 });
-
 
 
 document.getElementById("botonNuevaBusqueda").addEventListener("click", function () { location.reload() });
