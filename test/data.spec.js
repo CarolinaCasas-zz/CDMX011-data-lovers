@@ -14,7 +14,7 @@ describe('Testeando filtro por tipo', () => {
   });
   it('Debería retornar un pokemon de agua', () => {
     expect(datitos.filtradoPorTipo(pokemones, 'water')).toEqual(pokemonAgua)
-  });
+  });\
 });
 
 describe('Testeando filtro por nombre', () =>{
