@@ -9,13 +9,11 @@
 body{
     background-color: #DBFDB9;
     background-image: url(https://i.ibb.co/3kcVsSJ/Be-Funky-design.jpg);
-    background-size: cover;
- 
 }
 
 .banner {
     display: flex;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-image: url(/banner.jpg);
     padding: 20px 10px;
     height: 120px; 
@@ -27,7 +25,7 @@ body{
   .logo{
     width: 360px;
     height: 130px;
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 
   
